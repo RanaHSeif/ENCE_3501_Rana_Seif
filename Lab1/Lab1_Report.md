@@ -114,7 +114,7 @@ seen in Figure 6 below.
 
 <figure>
   <div align="center">
-    <img src="imgs_and_videos/DAC_Schematic_Icon_and_Spices.png" alt="DAC Schematics, Icon and SPICE code" width="500">
+    <img src="imgs_and_videos/DAC_Schematic_Icon_and_Spice.png" alt="DAC Schematics, Icon and SPICE code" width="500">
   </div>
 </figure>
 
@@ -142,7 +142,7 @@ The layout of the DAC was then created as shown in figures 8 and 9.
 
 <figure>
   <div align="center">
-    <img src="imgs_and_videos/DAC_Layout.png" alt="DAC Layout" width="500">
+    <img src="imgs_and_videos/DAC_layout.png" alt="DAC Layout" width="500">
   </div>
 </figure>
 
