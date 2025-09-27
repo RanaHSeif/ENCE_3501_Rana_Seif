@@ -175,3 +175,20 @@ for the transient were used to show and display the output voltgage wave form an
   <figcaption><em>Figure 10: DAC SPICE Simulation Transient Results</em></figcaption>
 </div>
 <br><br>
+
+In this case the thevenin resistance is 2R // 2R = 10k in this situation. This means that loading the DAC with a 10k resistor creates a series
+resistance of higher magnitude than the previos case which increases the rise time (delay) because the capacitance stays the same.
+
+The following was simulated and the results can be seen below in Figure 11.
+
+<figure>
+  <div align="center">
+    <img src="imgs_and_videos/10k_Loaded_DAC_Sim_Results.png" alt="DAC SPICE Simulation Transient Results when Loaded with 10k Resistor" width="500">
+  </div>
+</figure>
+
+<div align="center">
+  <figcaption><em>Figure 11: DAC SPICE Simulation Transient Results when Loaded with 10k Resistor</em></figcaption>
+</div>
+<br><br>
+
