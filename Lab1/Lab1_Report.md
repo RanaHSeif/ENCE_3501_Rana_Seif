@@ -167,7 +167,7 @@ for the transient were used to show and display the output voltgage wave form an
 
 <figure>
   <div align="center">
-    <img src="imgs_and_videos/DAC_Spice_Sim_Results.png" alt="DAC SPICE Simulation Transient Results" width="500">
+    <img src="imgs_and_videos/DAC_Spice_Sim_Results.png" alt="DAC SPICE Simulation Transient Results" width="1000">
   </div>
 </figure>
 
@@ -183,7 +183,7 @@ The following was simulated and the results can be seen below in Figure 11.
 
 <figure>
   <div align="center">
-    <img src="imgs_and_videos/10k_Loaded_DAC_Sim_Results.png" alt="DAC SPICE Simulation Transient Results when Loaded with 10k Resistor" width="500">
+    <img src="imgs_and_videos/10k_Loaded_DAC_Sim_Results.png" alt="DAC SPICE Simulation Transient Results when Loaded with 10k Resistor" width="1000">
   </div>
 </figure>
 
