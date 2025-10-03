@@ -1,7 +1,5 @@
 # Lab 2 Report
 
-## Introduction
-
 In this lab we are creating a padframe for the DAC. To do that we start by importing the DAC from the last lab, creating the individual pad schematic and layout
 then finally creating the padframe layout.
 
