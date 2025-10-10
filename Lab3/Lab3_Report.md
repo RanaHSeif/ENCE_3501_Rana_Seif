@@ -63,7 +63,7 @@ padframe.
 
 <figure>
   <div align="center">
-    <img src="imgs_and_videos/padframe_no_esd_schematic_and_icon.png" alt="Schematic and Icon for the Padframe without ESD" width="500">
+    <img src="imgs_and_videos/padframe_esd_schematic_and_icon.png" alt="Schematic and Icon for the Padframe without ESD" width="500">
   </div>
 </figure>
 
@@ -76,7 +76,7 @@ Figure 6 shows the layout of the same padframe with protection.
 
 <figure>
   <div align="center">
-    <img src="imgs_and_videos/padframe_no_esd_layout.png" alt="Layout for the Padframe without ESD" width="500">
+    <img src="imgs_and_videos/padframe_esd_layout.png" alt="Layout for the Padframe without ESD" width="500">
   </div>
 </figure>
 
