@@ -1,7 +1,7 @@
 # Lab 4 Report
 
 In this lab, we are creating two different inverters using different sizes for the PMOS and NMOS widths in order to view the effect of that on the switching point.
-With that goal in mind, we create 2 different inverters (inverter 1 and inverter 2) then add them both to a single schematic to run simulations on.\
+With that goal in mind, we create 2 different inverters (inverter 1 and inverter 2) then add them both to a single schematic to run simulations on.
 Electric VLSI was used to create all the following schematics and layouts and LT Spice was used to run the simulations.
 
 ## Inverter 1
@@ -144,5 +144,19 @@ The simulation was then run and the results for the first loading conditions can
 </div>
 <br><br>
 
-In these results, we can see that higher load impedance causes a higher response time for both inverters. We can also see that Inverter 2 has an overall faster 
+In these results, we can see that lower load impedance causes a higher response time for both inverters. We can also see that Inverter 2 has an overall faster 
 response. 
+
+A final sim was ran to confirm these conclusions and results with different cload values set to 1fF, 10fF, and 100fF. The results can be seen below in Figure 11.
+
+<figure>
+  <div align="center">
+    <img src="imgs_and_videos/CombinedInverters_with_cload2_Sim.png" alt="Combined Inverters Sim Results with cload Values 1fF, 10fF, and 100fF" width="800">
+  </div>
+</figure>
+
+<div align="center">
+  <figcaption><em>Figure 10: Combined Inverters Sim Results with cload Values 1fF, 10fF, and 100fF</em></figcaption>
+</div>
+<br><br>
+
