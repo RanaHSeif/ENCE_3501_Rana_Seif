@@ -10,7 +10,7 @@ Inverter 1 was created as can be seen in the schematic and layout below in Figur
 
 <figure>
   <div align="center">
-    <img src="imgs_and_videos/Inverter1_Schematic_and_Icon.png" alt="Inverter 1 Schematic and Icon" width="500">
+    <img src="imgs_and_videos/Inverter1_Schematic_and_Icon.png" alt="Inverter 1 Schematic and Icon" width="700">
   </div>
 </figure>
 
@@ -21,7 +21,7 @@ Inverter 1 was created as can be seen in the schematic and layout below in Figur
 
 <figure>
   <div align="center">
-    <img src="imgs_and_videos/Inverter1_Layout.png" alt="Inverter 1 Layout" width="500">
+    <img src="imgs_and_videos/Inverter1_Layout.png" alt="Inverter 1 Layout" width="300">
   </div>
 </figure>
 
@@ -35,7 +35,7 @@ locating the intersection, there is some human error associated with the produce
 
 <figure>
   <div align="center">
-    <img src="imgs_and_videos/Inverter1_SwitchingPoint_Sim.png" alt="Inverter 1 Switching Point Simulation Results" width="500">
+    <img src="imgs_and_videos/Inverter1_SwitchingPoint_Sim.png" alt="Inverter 1 Switching Point Simulation Results" width="800">
   </div>
 </figure>
 
@@ -52,7 +52,7 @@ Inverter 2 was created as can be seen in the schematic and layout below in Figur
 
 <figure>
   <div align="center">
-    <img src="imgs_and_videos/Inverter2_Schematic_and_Icon.png" alt="Inverter 2 Schematic and Icon" width="500">
+    <img src="imgs_and_videos/Inverter2_Schematic_and_Icon.png" alt="Inverter 2 Schematic and Icon" width="700">
   </div>
 </figure>
 
@@ -63,7 +63,7 @@ Inverter 2 was created as can be seen in the schematic and layout below in Figur
 
 <figure>
   <div align="center">
-    <img src="imgs_and_videos/Inverter2_Layout.png" alt="Inverter 2 Layout" width="500">
+    <img src="imgs_and_videos/Inverter2_Layout.png" alt="Inverter 2 Layout" width="300">
   </div>
 </figure>
 
@@ -77,7 +77,7 @@ locating the intersection, there is some human error associated with the produce
 
 <figure>
   <div align="center">
-    <img src="imgs_and_videos/Inverter2_SwitchingPoint_Sim.png" alt="Inverter 2 Switching Point Simulation Results" width="500">
+    <img src="imgs_and_videos/Inverter2_SwitchingPoint_Sim.png" alt="Inverter 2 Switching Point Simulation Results" width="800">
   </div>
 </figure>
 
@@ -92,7 +92,7 @@ The inverters were then combined as can be seen in the schematic in Figure 7.
 
 <figure>
   <div align="center">
-    <img src="imgs_and_videos/CombinedInverter_Schematic.png" alt="Combined Inverters Schematic" width="500">
+    <img src="imgs_and_videos/CombinedInverters_Schematic.png" alt="Combined Inverters Schematic" width="700">
   </div>
 </figure>
 
@@ -106,7 +106,7 @@ simulation results.
 
 <figure>
   <div align="center">
-    <img src="imgs_and_videos/CombinedInverters_SwitchingPoint_Sim.png" alt="Combined Inverters Switching Point Sim Results" width="500">
+    <img src="imgs_and_videos/CombinedInverters_SwitchingPoint_Sim.png" alt="Combined Inverters Switching Point Sim Results" width="800">
   </div>
 </figure>
 
@@ -122,7 +122,7 @@ for cload values of 100fF, 1pF, 10pF, and 100pF.
 
 <figure>
   <div align="center">
-    <img src="imgs_and_videos/CombinedInverters_with_cload1_Schematic.png" alt="Combined Inverters with cload Schematic" width="500">
+    <img src="imgs_and_videos/CombinedInverters_with_cload1_Schematic.png" alt="Combined Inverters with cload Schematic" width="700">
   </div>
 </figure>
 
@@ -135,7 +135,7 @@ The simulation was then run and the results for the first loading conditions can
 
 <figure>
   <div align="center">
-    <img src="imgs_and_videos/CombinedInverters_with_cload1_Sim.png" alt="Combined Inverters Sim Results with cload Values 100fF, 1pF, 10pF, and 100pF" width="500">
+    <img src="imgs_and_videos/CombinedInverters_with_cload1_Sim.png" alt="Combined Inverters Sim Results with cload Values 100fF, 1pF, 10pF, and 100pF" width="800">
   </div>
 </figure>
 
