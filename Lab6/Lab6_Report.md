@@ -7,7 +7,7 @@ Figure 1 shows the schematic and icon of the 3 Phase Charge Pump gate.
 <br> <br>
 <figure>
   <div align="center">
-    <img src="imgs_and_videos/Charge_Pump_Schematic_and_Icon.png" alt="Charge Pump Schematic and Icon" width="500">
+    <img src="imgs_and_videos/Charge_Pump_Schematics_and_Icon.png" alt="Charge Pump Schematic and Icon" width="500">
   </div>
 </figure>
 
@@ -21,7 +21,7 @@ The charge pump schematic was the simulated as follows in Figure 2.
 <br> <br>
 <figure>
   <div align="center">
-    <img src="imgs_and_videos/Charge_Pump_Sim_Schematic.png" alt="Charge Pump Sim Schematic" width="500">
+    <img src="imgs_and_videos/Charge_Pump_Sim_Schematics.png" alt="Charge Pump Sim Schematic" width="500">
   </div>
 </figure>
 
