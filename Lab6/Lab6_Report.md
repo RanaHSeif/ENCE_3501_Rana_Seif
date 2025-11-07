@@ -156,7 +156,7 @@ Figure 11 shows the schematic and icon of the Regulator.
 <br> <br>
 <figure>
   <div align="center">
-    <img src="imgs_and_videos/Regulator_Schematics_and_Icon.png" alt="Regulator Schematic and Icon" width="500">
+    <img src="imgs_and_videos/Regulator_Schematic_and_Icon.png" alt="Regulator Schematic and Icon" width="500">
   </div>
 </figure>
 
@@ -207,23 +207,9 @@ Next, the layout was created as can be seen in Figure 14.
 </div>
 <br><br>
 
-The 3D view of the Layout can be seen below in Figure 15.
-
-<br> <br>
-<figure>
-  <div align="center">
-    <img src="imgs_and_videos/Regulator_Layout_3D.png" alt="Regulator 3D View" width="500">
-  </div>
-</figure>
-
-<div align="center">
-  <figcaption><em>Figure 15: Regulator 3D View </em></figcaption>
-</div>
-<br><br>
-
 ## Combined Blocks
 
-Finally, the blocks are combined in a schematic as shown below in Figure 16.
+Finally, the blocks are combined in a schematic as shown below in Figure 15.
 
 <br> <br>
 <figure>
@@ -233,11 +219,11 @@ Finally, the blocks are combined in a schematic as shown below in Figure 16.
 </figure>
 
 <div align="center">
-  <figcaption><em>Figure 16: Combined Circuit Schematic</em></figcaption>
+  <figcaption><em>Figure 15: Combined Circuit Schematic</em></figcaption>
 </div>
 <br><br>
 
-The schematic was the simulated as follows in Figure 17.
+The schematic was the simulated as follows in Figure 16.
 
 <br> <br>
 <figure>
@@ -247,11 +233,11 @@ The schematic was the simulated as follows in Figure 17.
 </figure>
 
 <div align="center">
-  <figcaption><em>Figure 17: Combined Circuit Sim Schematic </em></figcaption>
+  <figcaption><em>Figure 16: Combined Circuit Sim Schematic </em></figcaption>
 </div>
 <br><br>
 
-The simulation results can be seen in Figure 18
+The simulation results can be seen in Figure 17.
 
 <br> <br>
 <figure>
@@ -261,11 +247,11 @@ The simulation results can be seen in Figure 18
 </figure>
 
 <div align="center">
-  <figcaption><em>Figure 18: Combined Circuit Simulation Results </em></figcaption>
+  <figcaption><em>Figure 17: Combined Circuit Simulation Results </em></figcaption>
 </div>
 <br><br>
 
-Next, the layout was created as can be seen in Figure 19.
+Next, the layout was created as can be seen in Figure 18.
 
 <br> <br>
 <figure>
@@ -275,6 +261,6 @@ Next, the layout was created as can be seen in Figure 19.
 </figure>
 
 <div align="center">
-  <figcaption><em>Figure 19: Combined Circuit Layout </em></figcaption>
+  <figcaption><em>Figure 18: Combined Circuit Layout </em></figcaption>
 </div>
 <br><br>
