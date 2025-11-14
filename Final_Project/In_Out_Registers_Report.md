@@ -15,14 +15,14 @@ The IN Register is implemented using tristate buffers that can drive the bus or 
 <br><br>
 
 <div align="center">
-  <img src="imgs_and_videos/IN_Reg_Schematic_Logisim.png" width="600" alt="IN Register Schematic Logisim">
+  <img src="imgs_and_videos/IN_Register_Logisim.png" width="600" alt="IN Register Schematic Logisim">
   <p><em>Figure 1: IN Register Schematic Implemented Using Tristate Buffers (Logisim)</em></p>
 </div>
 
 <br><br>
 
 <div align="center">
-  <img src="imgs_and_videos/IN_Reg_Schematic.png" width="600" alt="IN Register Schematic">
+  <img src="imgs_and_videos/IN_Register_Schematic.png" width="600" alt="IN Register Schematic">
   <p><em>Figure 2: IN Register Transistor-Level Schematic with Tristate Buffers</em></p>
 </div>
 
@@ -39,7 +39,7 @@ When EnableIn is high (logic 1), the tristate buffers are active and drive the D
 <br><br>
 
 <div align="center">
-  <img src="imgs_and_videos/IN_Reg_Sim_Enable1.png" width="700" alt="IN Register Simulation Enable = 1">
+  <img src="imgs_and_videos/IN_Register_Sim.png" width="700" alt="IN Register Simulation Enable = 1">
   <p><em>Figure 3: SPICE Simulation of IN Register When EnableIn = 1 (Actively Driving Bus)</em></p>
 </div>
 
@@ -52,7 +52,7 @@ This simulation shows the critical behavior of the tristate buffers as EnableIn 
 <br><br>
 
 <div align="center">
-  <img src="imgs_and_videos/IN_Reg_Sim_Toggling.png" width="700" alt="IN Register Simulation with EnableIn toggling">
+  <img src="imgs_and_videos/IN_Register_Sim_at_Enable1.png" width="700" alt="IN Register Simulation with EnableIn toggling">
   <p><em>Figure 4: SPICE Simulation Demonstrating Tristate Operation When EnableIn Toggles</em></p>
 </div>
 
@@ -65,14 +65,14 @@ The physical layout implements four parallel tristate buffer structures, one for
 <br><br>
 
 <div align="center">
-  <img src="imgs_and_videos/IN_Reg_Layout.png" width="700" alt="IN Register Layout">
+  <img src="imgs_and_videos/IN_Register_Layout.png" width="700" alt="IN Register Layout">
   <p><em>Figure 5: Completed IN Register Layout Showing Four Parallel Buffer Structures</em></p>
 </div>
 
 <br><br>
 
 <div align="center">
-  <img src="imgs_and_videos/IN_Reg_Layout_3D.png" width="700" alt="IN Register 3D Layout">
+  <img src="imgs_and_videos/IN_Register_Layout_3D.png" width="700" alt="IN Register 3D Layout">
   <p><em>Figure 6: 3D Rendering of IN Register Layout Showing Metal Layers and Interconnects</em></p>
 </div>
 
@@ -89,7 +89,7 @@ Initially, muddlib D-Flip-Flops were used to implement the OUT Register. However
 <br><br>
 
 <div align="center">
-  <img src="imgs_and_videos/Muddlib_DFF.png" width="400" alt="muddlib D Flip-Flop">
+  <img src="imgs_and_videos/DFF_muddlib_2phase.png" width="400" alt="muddlib D Flip-Flop">
   <p><em>Figure 7: mudLib Two-Phase D Flip-Flop Cell (ph2ph1 Configuration)</em></p>
 </div>
 
@@ -102,8 +102,15 @@ The muddlib D flip-flop uses a master-slave architecture with two phases: PH1 an
 <br><br>
 
 <div align="center">
-  <img src="imgs_and_videos/New_DFF_Intro.png" width="600" alt="New D FF Motivation Slide">
-  <p><em>Figure 8: Motivation for Creating a Custom D Flip-Flop to Solve Double-Triggering Issue</em></p>
+  <img src="imgs_and_videos/DFF_masterSlave_Schematic.png" width="600" alt="New D FF Motivation Slide">
+  <p><em>Figure 8: Master-Slave D Flip-Flop Architecture Showing Two-Phase Clocking</em></p>
+</div>
+
+<br><br>
+
+<div align="center">
+  <img src="imgs_and_videos/DFF_muddlib_2phase_Schematic.png" width="600" alt="Muddlib DFF Schematic">
+  <p><em>Figure 9: Detailed Schematic of mudLib Two-Phase D Flip-Flop</em></p>
 </div>
 
 <br><br>
@@ -119,8 +126,8 @@ The initial design attempted to create a D flip-flop using SR latch logic. This 
 <br><br>
 
 <div align="center">
-  <img src="imgs_and_videos/New_DFF_LevelTriggered_Logic.png" width="600" alt="Custom SR-based DFF Logic">
-  <p><em>Figure 9: Logic-Level Representation of First Custom D Flip-Flop Attempt Using SR Latch</em></p>
+  <img src="imgs_and_videos/DFF_Logisim.png" width="600" alt="Custom SR-based DFF Logic">
+  <p><em>Figure 10: Logic-Level Representation of First Custom D Flip-Flop Attempt Using SR Latch</em></p>
 </div>
 
 <br><br>
@@ -136,8 +143,8 @@ The schematic shows the transistor-level implementation with distinct sections:
 <br><br>
 
 <div align="center">
-  <img src="imgs_and_videos/New_DFF_Schematic.png" width="600" alt="Custom DFF Schematic">
-  <p><em>Figure 10: Transistor-Level Schematic of Custom D Flip-Flop with Labeled Functional Blocks</em></p>
+  <img src="imgs_and_videos/DFF_Schematic.png" width="600" alt="Custom DFF Schematic">
+  <p><em>Figure 11: Transistor-Level Schematic of Custom D Flip-Flop with Labeled Functional Blocks</em></p>
 </div>
 
 <br><br>
@@ -156,8 +163,8 @@ To add a reset capability without fully redesigning the D flip-flop, an AND gate
 <br><br>
 
 <div align="center">
-  <img src="imgs_and_videos/New_DFF_Reset.png" width="600" alt="Custom DFF Reset Logic">
-  <p><em>Figure 11: Reset Logic Added Using AND Gate to Enforce D_in Behavior</em></p>
+  <img src="imgs_and_videos/DFF_Reset_Logic.png" width="600" alt="Custom DFF Reset Logic">
+  <p><em>Figure 12: Reset Logic Added Using AND Gate to Enforce D_in Behavior</em></p>
 </div>
 
 <br><br>
@@ -169,8 +176,8 @@ The simulation revealed that the first attempt was not edge-triggered as intende
 <br><br>
 
 <div align="center">
-  <img src="imgs_and_videos/New_DFF_Level_Sim.png" width="700" alt="Custom DFF Simulation Not Edge Triggered">
-  <p><em>Figure 12: Simulation Showing That First Attempt Was Level-Triggered, Not Edge-Triggered</em></p>
+  <img src="imgs_and_videos/DFF_Sim.png" width="700" alt="Custom DFF Simulation Not Edge Triggered">
+  <p><em>Figure 13: Simulation Showing That First Attempt Was Level-Triggered, Not Edge-Triggered</em></p>
 </div>
 
 <br><br>
@@ -182,8 +189,8 @@ After identifying the level-triggered behavior issue, the design was revised to 
 <br><br>
 
 <div align="center">
-  <img src="imgs_and_videos/New_DFF_EdgeTriggered.png" width="600" alt="Final Edge Triggered DFF">
-  <p><em>Figure 13: Final Positive-Edge-Triggered Custom D Flip-Flop with Proper Edge Detection</em></p>
+  <img src="imgs_and_videos/Edge_Triggered_DFF_Schematic.png" width="600" alt="Final Edge Triggered DFF">
+  <p><em>Figure 14: Final Positive-Edge-Triggered Custom D Flip-Flop with Proper Edge Detection</em></p>
 </div>
 
 <br><br>
@@ -195,8 +202,8 @@ The final simulation confirms proper edge-triggered operation. The output Q chan
 <br><br>
 
 <div align="center">
-  <img src="imgs_and_videos/New_DFF_Final_Sim.png" width="700" alt="Final DFF Simulation">
-  <p><em>Figure 14: SPICE Simulation of Final Edge-Triggered DFF Showing Correct Operation</em></p>
+  <img src="imgs_and_videos/Edge_Triggered_DFF_Sim.png" width="700" alt="Final DFF Simulation">
+  <p><em>Figure 15: SPICE Simulation of Final Edge-Triggered DFF Showing Correct Operation</em></p>
 </div>
 
 <br><br>
@@ -208,15 +215,8 @@ The layout implements the custom edge-triggered D flip-flop in physical form, ca
 <br><br>
 
 <div align="center">
-  <img src="imgs_and_videos/New_DFF_Layout.png" width="700" alt="Final DFF Layout">
-  <p><em>Figure 15: Physical Layout of Final Custom D Flip-Flop</em></p>
-</div>
-
-<br><br>
-
-<div align="center">
-  <img src="imgs_and_videos/New_DFF_Layout_3D.png" width="700" alt="Final DFF 3D Layout">
-  <p><em>Figure 16: 3D Rendering of Final Custom D Flip-Flop Showing Layer Stack-up</em></p>
+  <img src="imgs_and_videos/Edge_Triggered_DFF_Layout.png" width="700" alt="Final DFF Layout">
+  <p><em>Figure 16: Physical Layout of Final Custom D Flip-Flop</em></p>
 </div>
 
 <br><br>
@@ -232,28 +232,15 @@ The initial OUT Register implementation used four muddlib D flip-flops in parall
 <br><br>
 
 <div align="center">
-  <img src="imgs_and_videos/OUT_Reg_Schematic_Muddlib_Logisim.png" width="600" alt="Out Register Schematic Using muddlib flops Logisim">
+  <img src="imgs_and_videos/OUT_Register_Logisim.png" width="600" alt="Out Register Schematic Using muddlib flops Logisim">
   <p><em>Figure 17: OUT Register Schematic Using mudLib Flip-Flops (Logisim Block Diagram)</em></p>
 </div>
 
 <br><br>
 
 <div align="center">
-  <img src="imgs_and_videos/OUT_Reg_Schematic_Muddlib.png" width="600" alt="Out Register Schematic Using muddlib flops">
+  <img src="imgs_and_videos/OUT_Register_Schematic.png" width="600" alt="Out Register Schematic Using muddlib flops">
   <p><em>Figure 18: OUT Register Transistor-Level Schematic Using mudLib Flip-Flops</em></p>
-</div>
-
-<br><br>
-
-#### OUT Register Schematic (Custom DFF)
-
-After designing and validating the new edge-triggered D flip-flop, the OUT Register was rebuilt using the custom cells. This design eliminates the double-triggering problem and provides reliable operation with a single clock signal.
-
-<br><br>
-
-<div align="center">
-  <img src="imgs_and_videos/OUT_Reg_Schematic_Custom.png" width="600" alt="Out Register Schematic custom flops">
-  <p><em>Figure 19: OUT Register Schematic Using Custom Edge-Triggered D Flip-Flops</em></p>
 </div>
 
 <br><br>
@@ -265,8 +252,8 @@ The SPICE simulation demonstrates the OUT Register operating with both EnableOut
 <br><br>
 
 <div align="center">
-  <img src="imgs_and_videos/OUT_Reg_Sim.png" width="700" alt="Out Reg Simulation">
-  <p><em>Figure 20: SPICE Simulation of OUT Register with EnableOut and Reset Active</em></p>
+  <img src="imgs_and_videos/OUT_Register_Sim.png" width="700" alt="Out Reg Simulation">
+  <p><em>Figure 19: SPICE Simulation of OUT Register with EnableOut and Reset Active</em></p>
 </div>
 
 <br><br>
@@ -278,15 +265,15 @@ The final OUT Register layout integrates four custom D flip-flop cells in parall
 <br><br>
 
 <div align="center">
-  <img src="imgs_and_videos/OUT_Reg_Layout.png" width="750" alt="Out Register Layout">
-  <p><em>Figure 21: OUT Register Physical Layout Using Four Custom DFF Cells</em></p>
+  <img src="imgs_and_videos/OUT_Register_Layout.png" width="750" alt="Out Register Layout">
+  <p><em>Figure 20: OUT Register Physical Layout Using Four Custom DFF Cells</em></p>
 </div>
 
 <br><br>
 
 <div align="center">
-  <img src="imgs_and_videos/OUT_Reg_Layout_3D.png" width="750" alt="Out Register 3D Layout">
-  <p><em>Figure 22: 3D Rendering of OUT Register Layout Showing Complete Structure</em></p>
+  <img src="imgs_and_videos/OUT_Register_Layout_3D.png" width="750" alt="Out Register 3D Layout">
+  <p><em>Figure 21: 3D Rendering of OUT Register Layout Showing Complete Structure</em></p>
 </div>
 
 <br><br>
