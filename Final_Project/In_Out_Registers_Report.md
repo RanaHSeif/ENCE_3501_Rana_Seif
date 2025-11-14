@@ -153,13 +153,6 @@ The schematic shows the transistor-level implementation with distinct sections:
 
 To add a reset capability without fully redesigning the D flip-flop, an AND gate was used to implement the reset functionality. The truth table ensures that when Reset is low (0), the D_in is forced to 0 regardless of the D input. Only when Reset is high (1) does D pass through to D_in.
 
-| Reset | D | D_in |
-|-------|---|------|
-| 0     | 0 | 0    |
-| 0     | 1 | 0    |
-| 1     | 0 | 0    |
-| 1     | 1 | 1    |
-
 <br><br>
 
 <div align="center">
